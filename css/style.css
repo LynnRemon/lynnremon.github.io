@@ -1,0 +1,113 @@
+/* 加载 */
+.loader {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgb(242, 242, 242);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader .loader-logo {
+  width: 4.8rem;
+  height: 4.8rem;
+  animation: bns 2.4s infinite;
+}
+
+@keyframes bns {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale(2);
+  }
+}
+
+/* HEADER 区域 */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 9.6rem;
+  padding: 4.8rem 9.6rem;
+}
+
+.header-logo {
+  height: 3.5rem;
+}
+
+.logo-route {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: draw 1s linear 0.5s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 核心部分 */
+.cover {
+  display: none;
+}
+
+.main-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+  margin-bottom: 50vh;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 3.2rem 0;
+}
+
+.main-nav-list span {
+  font-size: 1.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Noto Serif";
+}
+
+.pics {
+  margin-top: 12.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer部分 */
+.main-footer {
+  background-color: #f1f3f5;
+  padding: 6.4rem 0;
+  margin-top: 25vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
